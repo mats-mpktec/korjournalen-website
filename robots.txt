@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://körjournalen.se/sitemap.xml
+Sitemap: https://xn--krjournalen-rfb.se/sitemap.xml
