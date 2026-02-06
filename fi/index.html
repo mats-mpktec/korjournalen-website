@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0e7c66">
+  <title>Ajopäiväkirja – Älykäs iOS‑ajopäiväkirja CarPlayllä ja raporteilla</title>
+  <meta name="description" content="Ajopäiväkirja on iOS‑ajopäiväkirja, joka kirjaa GPS‑ajot, tukee useita kuljettajia/ajoneuvoja/yrityksiä, projektimerkintää ja PDF- tai CSV‑raporttien vientiä. Tietosuoja iCloud‑synkronoinnilla.">
+
+  <link rel="preload" as="image" href="/images/en001-mob.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="canonical" href="https://körjournalen.se/fi/">
+  <link rel="alternate" hreflang="sv" href="https://körjournalen.se/sv/">
+  <link rel="alternate" hreflang="en" href="https://körjournalen.se/en/">
+  <link rel="alternate" hreflang="de" href="https://körjournalen.se/de/">
+  <link rel="alternate" hreflang="da" href="https://körjournalen.se/da/">
+  <link rel="alternate" hreflang="nb" href="https://körjournalen.se/nb/">
+  <link rel="alternate" hreflang="fi" href="https://körjournalen.se/fi/">
+  <link rel="alternate" hreflang="nl" href="https://körjournalen.se/nl/">
+  <link rel="alternate" hreflang="pl" href="https://körjournalen.se/pl/">
+  <link rel="alternate" hreflang="x-default" href="https://körjournalen.se/en/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ajopäiväkirja – Älykäs iOS‑ajopäiväkirja">
+  <meta property="og:description" content="Automaattinen ajon kirjaus CarPlayllä, projektimerkinnät ja PDF/CSV‑vienti. Tietosi pysyvät sinulla.">
+  <meta property="og:image" content="https://körjournalen.se/images/korjournalen_OG_EN.jpg">
+  <meta property="og:url" content="https://körjournalen.se/fi/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ajopäiväkirja – Älykäs iOS‑ajopäiväkirja">
+  <meta name="twitter:description" content="Automaattinen ajon kirjaus CarPlayllä, projektimerkinnät ja PDF/CSV‑vienti. Tietosi pysyvät sinulla.">
+  <meta name="twitter:image" content="https://körjournalen.se/images/korjournalen_OG_EN.jpg">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Ajopäiväkirja",
+    "operatingSystem": "iOS",
+    "applicationCategory": "BusinessApplication",
+    "description": "Ajopäiväkirja kirjaa ajot automaattisesti GPS:n avulla, tukee useita yrityksiä/kuljettajia/ajoneuvoja, projektimerkintöjä ja PDF/CSV‑vientiä.",
+    "url": "https://körjournalen.se/fi/",
+    "installUrl": "https://apps.apple.com/app/id6758159503",
+    "applicationSubCategory": "ProductivityApplication",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MPK Tec AB"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "SEK",
+      "category": "Free"
+    },
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/fi/">
+        <span class="logo-mark"><img src="/images/icon.png" alt="Ajopäiväkirja"></span>
+        <span>Ajopäiväkirja</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#features">Ominaisuudet</a>
+        <a href="#reports">Raportit</a>
+        <a href="#privacy">Tietosuoja</a>
+        <a href="#pricing">Hinta</a>
+        <a class="btn btn-primary" href="#download">Lataa</a>
+        <label for="lang-select" class="sr-only">Kieli</label>
+        <select id="lang-select" class="lang-select" aria-label="Kieli">
+          <option value="/sv/">🇸🇪 SV</option>
+          <option value="/en/">🇬🇧 EN</option>
+          <option value="/de/">🇩🇪 DE</option>
+          <option value="/da/">🇩🇰 DA</option>
+          <option value="/nb/">🇳🇴 NB</option>
+          <option value="/fi/" selected>🇫🇮 FI</option>
+          <option value="/nl/">🇳🇱 NL</option>
+          <option value="/pl/">🇵🇱 PL</option>
+        </select>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" type="button">Valikko</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Älykäs iOS‑ajopäiväkirja</span>
+          <h1>Automaattinen ajon kirjaus, joka auttaa noudattamaan sääntöjä*</h1>
+          <p>
+            Ajopäiväkirja kirjaa GPS‑ajot luotettavasti, tukee useita yrityksiä, kuljettajia ja ajoneuvoja
+            ja mahdollistaa projektien/projektinumeroiden merkitsemisen. Vie valmiit PDF‑ tai CSV‑raportit
+            silloin kun tarvitset.
+          </p>
+          <div class="badges">
+            <span class="badge">CarPlay AutoStop &amp; Full Auto</span>
+            <span class="badge">iCloud‑synkronointi laitteiden välillä</span>
+            <span class="badge">Ei kolmannen osapuolen seurantaa</span>
+          </div>
+          <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Lataa App Storesta</a>
+            <a class="btn btn-ghost" href="#features">Katso ominaisuudet</a>
+          </div>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Tiedot tallennetaan paikallisesti ja voidaan synkronoida turvallisesti iCloudin kautta.</p>
+        </div>
+        <div class="hero-card hero-card--image reveal delay-1">
+          <div class="hero-caption">
+            <div class="hero-over-phone">Täysi hallinta ajopäiväkirjaasi</div>
+            <div class="hero-over-phone-sub">Manuaalinen, GPS tai automaattinen</div>
+          </div>
+          <div class="device-frame">
+            <img src="/images/en001-mob.png" alt="Ajopäiväkirjan näkymä" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">Ominaisuudet, jotka säästävät aikaa</h2>
+        <p class="section-intro">Yrityksille ja kuljettajille, jotka tarvitsevat selkeän, tarkan ja todennettavan ajopäiväkirjan.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Automaattinen kirjaus CarPlaylla</h3>
+            <p>AutoStop käynnistyy manuaalisesti ja pysähtyy, kun CarPlay katkaistaan. Full Auto käynnistyy ja pysähtyy automaattisesti aikataulun mukaan (PRO).</p>
+          </article>
+          <article class="card reveal delay-1">
+            <h3>Useita yrityksiä, kuljettajia ja ajoneuvoja</h3>
+            <p>Vaihda nopeasti kuljettajien, ajoneuvojen ja yritysten välillä. Kaikki yhdessä sovelluksessa.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <h3>Projektimerkintä</h3>
+            <p>Merkitse jokainen ajo projektilla tai projektinumerolla selkeää kustannusseurantaa varten.</p>
+          </article>
+          <article class="card reveal delay-3">
+            <h3>PDF- ja CSV‑raportit</h3>
+            <p>Suodata päivämäärän, yrityksen, kuljettajan, ajoneuvon tai projektin mukaan ja vie heti.</p>
+          </article>
+          <article class="card reveal delay-3">
+            <h3>Saatavilla useilla kielillä</h3>
+            <p>Ruotsi, englanti, saksa, tanska, norja (bokmål), suomi, hollanti, puola.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <div class="container split">
+        <div class="reveal">
+          <h2 class="section-title">Raportit kirjanpitoon</h2>
+          <p class="section-intro">Valitse ajanjakso ja vientimuoto. PDF‑raportit voivat sisältää mittarilukeman, korvaukset ja CO₂.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div>
+                <strong>Suodata yrityksen, kuljettajan, ajoneuvon tai projektin mukaan</strong>
+                <p style="margin: 6px 0 0; color: var(--ink-muted);">Löydä juuri ne ajot, jotka tarvitset raportointiin.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div>
+                <strong>PDF tai CSV siistillä muotoilulla</strong>
+                <p style="margin: 6px 0 0; color: var(--ink-muted);">Täydellinen kirjanpitoon tai asiakasraportteihin.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div>
+                <strong>CO₂‑sarake ja korvaus</strong>
+                <p style="margin: 6px 0 0; color: var(--ink-muted);">Selkeä näkymä vaikutuksiin ja kilometrikorvauksiin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <div class="hero-caption hero-caption--report">
+            <div class="hero-over-phone">Vie tarkat raportit</div>
+            <div class="hero-over-phone-sub">Kirjanpito tai CO<sub>2</sub>-raportointi</div>
+          </div>
+          <img src="/images/en004T.png" alt="PDF‑raportti koosteella" class="device-frame" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container split">
+        <div class="hero-card reveal">
+          <h2 class="section-title">Tietosuoja ilman kompromisseja</h2>
+          <p class="section-intro">Ajopäiväkirja ei käytä kolmannen osapuolen analytiikkaa. Kaikki data pysyy laitteessasi ja voidaan synkronoida turvallisesti iCloudin kautta.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div><strong>Ei seurantaa, ei mainoksia</strong></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div><strong>Paikallinen tallennus + CloudKit‑synk</strong></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div><strong>Omistat aina tietosi</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <div class="gallery">
+            <div class="gallery-item">
+              <div class="hero-caption">
+                <div class="hero-over-phone">Helppo jälkikirjaus</div>
+                <div class="hero-over-phone-sub">Tarkoitus, tyyppi &amp; mittarilukema</div>
+              </div>
+              <img src="/images/en002T.png" alt="Muokkaa ajon tietoja" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <div class="hero-caption">
+                <div class="hero-over-phone">Selkeä kuukausihistoria</div>
+                <div class="hero-over-phone-sub">Kaikki ajot yhdessä paikassa</div>
+              </div>
+              <img src="/images/en003T.png" alt="Kuljettajat ja ajoneuvot" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <div class="hero-caption">
+                <div class="hero-over-phone">Hands‑free autossa</div>
+                <div class="hero-over-phone-sub">Sirin ja CarPlayn avulla</div>
+              </div>
+              <img src="/images/en006T.png" alt="Asetukset ja oikotiet" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Aloita ilmaiseksi, avaa PRO kun tarvitset enemmän</h2>
+        <p class="section-intro">Ilmaisversio sopii satunnaiseen käyttöön. PRO avaa rajattomat ajot ja automaation.</p>
+        <div class="pricing-grid" style="margin-top: 34px;">
+          <div class="price-card reveal">
+            <h3>Ilmainen</h3>
+            <p style="color: var(--ink-muted);">Kokeiluun.</p>
+            <ul>
+              <li>Enintään 5 ajoa yhteensä</li>
+              <li>Manuaalinen start/stop + Siri + widget</li>
+              <li>PDF vesileimalla</li>
+            </ul>
+          </div>
+          <div class="price-card highlight reveal delay-1">
+            <h3>PRO</h3>
+            <p style="color: var(--ink-muted);">Kertamaksu sovelluksessa: $7.99.</p>
+            <ul>
+              <li>Rajattomat ajot</li>
+              <li>AutoStart/AutoStop CarPlayllä</li>
+              <li>PDF‑raportit ilman vesileimaa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="container">
+        <div class="cta reveal">
+          <h2>Valmis älykkäämpään kirjanpitoon?</h2>
+          <p>Aloita muutamassa minuutissa. Lataa Ajopäiväkirja ja tee ensimmäinen raporttisi tänään.</p>
+          <div>
+            <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Lataa App Storesta</a>
+            <a class="btn btn-ghost" href="mailto:info@mpktec.se">Ota yhteyttä</a>
+          </div>
+          <p style="font-size: 0.95rem;">Skaalautuu useisiin yrityksiin, ajoneuvoihin ja kuljettajiin.</p>
+          <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.75);">* Sinun vastuullasi on varmistaa, että raportointi täyttää voimassa olevat säännöt.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <span>© 2026 <a href="https://mpktec.se">MPK Tec AB</a></span>
+        <span><a href="/sv/">Svenska</a> · <a href="mailto:info@mpktec.se">info@mpktec.se</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const langSelect = document.getElementById('lang-select');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+    if (langSelect) {
+      langSelect.addEventListener('change', (event) => {
+        const target = event.target.value;
+        if (target) {
+          window.location.href = target;
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0e7c66">
+  <title>Mileage Journal – Smart mileage logbook for iOS with CarPlay and reports</title>
+  <meta name="description" content="Mileage Journal is an iOS mileage logbook that tracks GPS trips, supports multiple drivers/vehicles/companies, project tagging, and exports PDF or CSV reports. Privacy-first with iCloud sync.">
+
+  <link rel="preload" as="image" href="/images/en001-mob.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="canonical" href="https://körjournalen.se/en/">
+  <link rel="alternate" hreflang="sv" href="https://körjournalen.se/sv/">
+  <link rel="alternate" hreflang="en" href="https://körjournalen.se/en/">
+  <link rel="alternate" hreflang="de" href="https://körjournalen.se/de/">
+  <link rel="alternate" hreflang="da" href="https://körjournalen.se/da/">
+  <link rel="alternate" hreflang="nb" href="https://körjournalen.se/nb/">
+  <link rel="alternate" hreflang="fi" href="https://körjournalen.se/fi/">
+  <link rel="alternate" hreflang="nl" href="https://körjournalen.se/nl/">
+  <link rel="alternate" hreflang="pl" href="https://körjournalen.se/pl/">
+  <link rel="alternate" hreflang="x-default" href="https://körjournalen.se/en/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mileage Journal – Smart mileage logbook for iOS">
+  <meta property="og:description" content="Automatic trip tracking with CarPlay, project tagging, and PDF/CSV exports. Your data stays yours.">
+  <meta property="og:image" content="https://körjournalen.se/images/korjournalen_OG_EN.jpg">
+  <meta property="og:url" content="https://körjournalen.se/en/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mileage Journal – Smart mileage logbook for iOS">
+  <meta name="twitter:description" content="Automatic trip tracking with CarPlay, project tagging, and PDF/CSV exports. Your data stays yours.">
+  <meta name="twitter:image" content="https://körjournalen.se/images/korjournalen_OG_EN.jpg">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Mileage Journal",
+    "operatingSystem": "iOS",
+    "applicationCategory": "BusinessApplication",
+    "description": "Mileage Journal automatically tracks trips with GPS, supports multiple companies/drivers/vehicles, project tagging, and PDF/CSV exports.",
+    "url": "https://körjournalen.se/en/",
+    "installUrl": "https://apps.apple.com/app/id6758159503",
+    "applicationSubCategory": "ProductivityApplication",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MPK Tec AB"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "SEK",
+      "category": "Free"
+    },
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/en/">
+        <span class="logo-mark"><img src="/images/icon.png" alt="Mileage Journal"></span>
+        <span>Mileage Journal</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#features">Features</a>
+        <a href="#reports">Reports</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn btn-primary" href="#download">Download</a>
+        <label for="lang-select" class="sr-only">Language</label>
+        <select id="lang-select" class="lang-select" aria-label="Language">
+          <option value="/sv/">🇸🇪 SV</option>
+          <option value="/en/" selected>🇬🇧 EN</option>
+          <option value="/de/">🇩🇪 DE</option>
+          <option value="/da/">🇩🇰 DA</option>
+          <option value="/nb/">🇳🇴 NB</option>
+          <option value="/fi/">🇫🇮 FI</option>
+          <option value="/nl/">🇳🇱 NL</option>
+          <option value="/pl/">🇵🇱 PL</option>
+        </select>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" type="button">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Smart mileage logbook for iOS</span>
+          <h1>Automatic trip tracking that keeps you compliant*</h1>
+          <p>
+            Mileage Journal reliably logs GPS trips, supports multiple companies, drivers, and vehicles, and lets you
+            tag trips with projects/project numbers. Export polished PDF or CSV reports whenever you need them.
+          </p>
+          <div class="badges">
+            <span class="badge">CarPlay AutoStop &amp; Full Auto</span>
+            <span class="badge">iCloud sync across devices</span>
+            <span class="badge">No third-party tracking</span>
+          </div>
+          <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Download on the App Store</a>
+            <a class="btn btn-ghost" href="#features">Explore features</a>
+          </div>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Data is stored locally and can sync securely via iCloud.</p>
+        </div>
+        <div class="hero-card hero-card--image reveal delay-1">
+          <div class="hero-caption hero-caption--report">
+            <div class="hero-over-phone">Full control of your Mileage Log</div>
+            <div class="hero-over-phone-sub">Manual, GPS, or automatic</div>
+          </div>
+          <div class="device-frame">
+            <img src="/images/en001-mob.png" alt="Mileage Journal trip overview" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">Features that save you time</h2>
+        <p class="section-intro">Built for teams and professionals who need a simple, accurate, and auditable mileage log.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Automatic tracking with CarPlay</h3>
+            <p>AutoStop requires manual start but stops when CarPlay disconnects. Full Auto starts and stops automatically on schedule (PRO).</p>
+          </article>
+          <article class="card reveal delay-1">
+            <h3>Multiple companies, drivers, and vehicles</h3>
+            <p>Switch quickly between drivers, vehicles, and companies. Everything stays organized in one app.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <h3>Project tagging</h3>
+            <p>Assign each trip to a project or project number for clear cost tracking.</p>
+          </article>
+          <article class="card reveal delay-3">
+            <h3>PDF and CSV reports</h3>
+            <p>Filter by date, company, driver, vehicle, or project and export instantly.</p>
+          </article>
+          <article class="card reveal delay-3">
+            <h3>Available in multiple languages</h3>
+            <p>Swedish, English, German, Danish, Norwegian (Bokmål), Finnish, Dutch, Polish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <div class="container split">
+        <div class="reveal">
+          <h2 class="section-title">Reports ready for accounting</h2>
+          <p class="section-intro">Choose a period and export format. PDF reports can include odometer, reimbursement, and CO₂ data.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div>
+                <strong>Filter by company, driver, vehicle, or project</strong>
+                <p style="margin: 6px 0 0; color: var(--ink-muted);">Find exactly the trips you need to report.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div>
+                <strong>PDF or CSV with clean formatting</strong>
+                <p style="margin: 6px 0 0; color: var(--ink-muted);">Perfect for finance tools or client reporting.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div>
+                <strong>CO₂ column and reimbursement support</strong>
+                <p style="margin: 6px 0 0; color: var(--ink-muted);">Get a clear view of impact and mileage compensation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <div class="hero-caption">
+            <div class="hero-over-phone">Export accurate reports</div>
+            <div class="hero-over-phone-sub">Accounting or CO<sub>2</sub> reporting</div>
+          </div>
+          <img src="/images/en004T.png" alt="PDF report with trip summary" class="device-frame" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container split">
+        <div class="hero-card reveal">
+          <h2 class="section-title">Privacy without compromise</h2>
+          <p class="section-intro">Mileage Journal uses no third-party analytics. All data stays on your device and can sync securely via iCloud.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div><strong>No tracking, no ads</strong></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div><strong>Local storage + CloudKit sync</strong></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <div><strong>You always own your data</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <div class="gallery">
+            <div class="gallery-item">
+              <div class="hero-caption">
+                <div class="hero-over-phone">Easy trip completion</div>
+                <div class="hero-over-phone-sub">Purpose, type &amp; odometer</div>
+              </div>
+              <img src="/images/en002T.png" alt="Trip details and editing" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <div class="hero-caption">
+                <div class="hero-over-phone">Clear monthly history</div>
+                <div class="hero-over-phone-sub">All trips in one place</div>
+              </div>
+              <img src="/images/en003T.png" alt="Drivers and vehicles" loading="lazy">
+            </div>
+            <div class="gallery-item">
+              <div class="hero-caption">
+                <div class="hero-over-phone">Hands-free in the car</div>
+                <div class="hero-over-phone-sub">With Siri and CarPlay</div>
+              </div>
+              <img src="/images/en006T.png" alt="Settings and shortcuts" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Start free, unlock PRO when you grow</h2>
+        <p class="section-intro">The free tier covers occasional use. PRO unlocks unlimited trips and automation.</p>
+        <div class="pricing-grid" style="margin-top: 34px;">
+          <div class="price-card reveal">
+            <h3>Free</h3>
+            <p style="color: var(--ink-muted);">For trying it out.</p>
+            <ul>
+              <li>Up to 5 total trips</li>
+              <li>Manual start/stop + Siri + widget</li>
+              <li>PDF with watermark</li>
+            </ul>
+          </div>
+          <div class="price-card highlight reveal delay-1">
+            <h3>PRO</h3>
+            <p style="color: var(--ink-muted);">One-time in-app purchase: $7.99.</p>
+            <ul>
+              <li>Unlimited trips</li>
+              <li>AutoStart/AutoStop via CarPlay</li>
+              <li>PDF reports without watermark</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="container">
+        <div class="cta reveal">
+          <h2>Ready to log smarter?</h2>
+          <p>Get started in minutes. Download Mileage Journal and create your first report today.</p>
+          <div>
+            <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Download on the App Store</a>
+            <a class="btn btn-ghost" href="mailto:info@mpktec.se">Contact</a>
+          </div>
+          <p style="font-size: 0.95rem;">Built to scale with multiple companies, vehicles and drivers.</p>
+          <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.75);">* It is your responsibility to ensure reporting meets current regulations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <span>© 2026 <a href="https://mpktec.se">MPK Tec AB</a></span>
+        <span><a href="/sv/">Svenska</a> · <a href="mailto:info@mpktec.se">info@mpktec.se</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const langSelect = document.getElementById('lang-select');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+    if (langSelect) {
+      langSelect.addEventListener('change', (event) => {
+        const target = event.target.value;
+        if (target) {
+          window.location.href = target;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
