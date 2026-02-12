@@ -425,8 +425,15 @@ footer {
   display: none;
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  cursor: pointer;
 }
 
 @media (max-width: 820px) {
