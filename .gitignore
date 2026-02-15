@@ -31,6 +31,8 @@ pnpm-debug.log*
 
 # Images: keep only those used on the site
 images/*
+!images/webp/
+!images/webp/*.webp
 !images/icon.png
 !images/sv001.png
 !images/en001-mob.png
