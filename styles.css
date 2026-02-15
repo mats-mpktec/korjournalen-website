@@ -418,6 +418,9 @@ header {
 }
 
 .gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 16px 36px rgba(15, 17, 21, 0.16);
 }
