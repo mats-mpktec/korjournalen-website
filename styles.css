@@ -284,6 +284,11 @@ header {
   background: transparent;
 }
 
+.device-frame img {
+  width: 100%;
+  height: auto;
+}
+
 .badges {
   display: flex;
   gap: 16px;
@@ -301,6 +306,7 @@ header {
 
 .section {
   padding: 90px 0;
+  scroll-margin-top: 96px;
 }
 
 .section-title {

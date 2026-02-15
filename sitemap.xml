@@ -3,6 +3,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://xn--krjournalen-rfb.se/sv/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -14,6 +15,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/en/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -25,6 +27,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/de/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -36,6 +39,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/da/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -47,6 +51,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/nb/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -58,6 +63,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/fi/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -69,6 +75,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/nl/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>
@@ -80,6 +87,7 @@
   </url>
   <url>
     <loc>https://xn--krjournalen-rfb.se/pl/</loc>
+    <lastmod>2026-02-15</lastmod>
     <image:image>
       <image:loc>https://xn--krjournalen-rfb.se/images/korjournalen_OG_EN.jpg</image:loc>
     </image:image>

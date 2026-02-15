@@ -70,6 +70,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/en/",
+        "name": "Mileage Journal",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Mileage Journal app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mileage Journal is an iOS app that records trips and helps you create accurate mileage logs with PDF and CSV exports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I print a PDF report in the app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can export your mileage log as a PDF and print or share it directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need odometer readings in a mileage log?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on your reporting needs and local rules. The app supports odometer readings to make reports more complete."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I export my mileage log to CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can export data to CSV for use in tools like Excel or accounting systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the app support multiple drivers and vehicles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the app supports multiple drivers, vehicles, and companies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I tag trips by project or customer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can tag trips with project names or project numbers for easier tracking and reporting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it work with CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the app includes CarPlay-related features for smoother in-car use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data stored locally or in the cloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data is stored locally on your device and syncs to your own iCloud account. We do not have access to your data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the app for both business and private trips?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can track both business and private trips and keep them clearly separated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the app meet official mileage log requirements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The app is designed to support common mileage log requirements, including key trip details and documentation fields. You are always responsible for ensuring your records are complete and compliant with the rules that apply to you."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -83,6 +194,7 @@
         <a href="#reports">Reports</a>
         <a href="#privacy">Privacy</a>
         <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Download</a>
         <label for="lang-select" class="sr-only">Language</label>
         <select id="lang-select" class="lang-select" aria-label="Language">
@@ -119,7 +231,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Download on the App Store</a>
             <a class="btn btn-ghost" href="#features">Explore features</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Data is stored locally and can sync securely via iCloud.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Data is stored locally and syncs securely via iCloud.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption hero-caption--report">
@@ -127,7 +239,7 @@
             <div class="hero-over-phone-sub">Manual, GPS, or automatic</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Mileage Journal trip overview" loading="eager">
+            <img src="/images/en001-mob.png" alt="Mileage Journal trip overview" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -205,7 +317,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Privacy without compromise</h2>
-          <p class="section-intro">Mileage Journal uses no third-party analytics. All data stays on your device and can sync securely via iCloud.</p>
+          <p class="section-intro">Mileage Journal uses no third-party analytics. All data stays on your device and syncs securely via iCloud.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -276,6 +388,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>What is the Mileage Journal app?</h3>
+            <p>Mileage Journal is an iOS app that records trips and helps you create accurate mileage logs with PDF and CSV exports.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Can I print a PDF report in the app?</h3>
+            <p>Yes, you can export your mileage log as a PDF and print or share it directly.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Do I need odometer readings in a mileage log?</h3>
+            <p>It depends on your reporting needs and local rules. The app supports odometer readings to make reports more complete.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Can I export my mileage log to CSV?</h3>
+            <p>Yes, you can export data to CSV for use in tools like Excel or accounting systems.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Does the app support multiple drivers and vehicles?</h3>
+            <p>Yes, the app supports multiple drivers, vehicles, and companies.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Can I tag trips by project or customer?</h3>
+            <p>Yes, you can tag trips with project names or project numbers for easier tracking and reporting.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Does it work with CarPlay?</h3>
+            <p>Yes, the app includes CarPlay-related features for smoother in-car use.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Is my data stored locally or in the cloud?</h3>
+            <p>Data is stored locally on your device and syncs to your own iCloud account. We do not have access to your data.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Can I use the app for both business and private trips?</h3>
+            <p>Yes, you can track both business and private trips and keep them clearly separated.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Does the app meet official mileage log requirements?</h3>
+            <p>The app is designed to support common mileage log requirements, including key trip details and documentation fields. You are always responsible for ensuring your records are complete and compliant with the rules that apply to you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -310,6 +470,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0e7c66">
-  <title>Körjournalen – Smart körjournal för iOS med CarPlay och rapporter</title>
-  <meta name="description" content="Körjournalen är en iOS-app som loggar GPS-resor, stöder flera förare/företag/fordon, projektmärkning och exporterar PDF- eller CSV-rapporter. Integritetsfokus, iCloud-synk och CarPlay-stöd.">
+  <title>Körjournal för iPhone med manuell och automatisk GPS-loggning</title>
+  <meta name="description" content="Elektronisk körjournal iPhone-app med manuell eller automatisk GPS-loggning, CarPlay och export till PDF/CSV.">
 
   <link rel="preload" as="image" href="/images/en001-mob.png">
 
@@ -74,6 +74,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/sv/",
+        "name": "Körjournalen",
+        "inLanguage": "sv",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vad är Körjournalen app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Körjournalen är en iOS-app som fungerar som en elektronisk körjournal iphone app. Om du söker körjournal iphone är detta appen för dig. Den hjälper dig registrera resor och skapa en korrekt körjournal med export till PDF eller CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan man skriva ut PDF-rapport i Körjournalen app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan exportera körjournalen som PDF och skriva ut eller dela rapporten direkt. Om du söker en manuell körjournal app kan du även registrera och komplettera resor manuellt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Behövs mätarställning i en körjournal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Det beror på dina krav och regler. Appen stödjer mätarställning så att rapporten kan bli mer komplett."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jag exportera körjournalen till CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Körjournalen kan exportera data till CSV för vidare hantering i till exempel Excel eller ekonomisystem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Fungerar Körjournalen med flera förare och fordon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, appen stödjer flera förare, fordon och företag i samma app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jag märka resor med projekt eller kund?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan märka resor med projekt eller projektnummer för enklare uppföljning och rapportering."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Fungerar appen med CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Körjournalen har stöd för CarPlay-funktioner för smidigare hantering i bilen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Lagrar ni min kördata lokalt eller i molnet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data lagras lokalt på din enhet och synkas till ditt eget iCloud-konto. Vi har ingen tillgång till din data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jag använda Körjournalen för både tjänst- och privatresor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan använda Körjournalen för både tjänst- och privatresor och hålla dem tydligt separerade i appen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Uppfyller Körjournalen Skatteverkets krav?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Körjournalen är utformad för att stödja de uppgifter som Skatteverket rekommenderar för en körjournal, till exempel datum, start och slut, körda kilometer, syfte med resa och mätarställning. Du ansvarar alltid själv för att körjournalen är komplett och korrekt enligt Skatteverkets aktuella regler."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -87,6 +198,7 @@
         <a href="#rapporter">Rapporter</a>
         <a href="#integritet">Integritet</a>
         <a href="#pris">Pris</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Ladda ner</a>
         <label for="lang-select" class="sr-only">Språk</label>
         <select id="lang-select" class="lang-select" aria-label="Språk">
@@ -109,10 +221,10 @@
       <div class="container hero-grid">
         <div class="reveal">
           <span class="eyebrow">Smart körjournal för iOS</span>
-          <h1>Automatisk körjournal för korrekt regelefterlevnad*</h1>
+          <h1>Körjournal app för iPhone är byggd för manuell eller automatisk GPS-loggning</h1>
           <p>
             Körjournalen loggar GPS-resor pålitligt, stödjer flera företag, förare och fordon och låter dig
-            märka resor med projekt/projektnummer. Exportera färdiga PDF- eller CSV-rapporter när det passar dig.
+            märka resor med projekt/projektnummer. Byggd för korrekt regelefterlevnad*. Exportera färdiga PDF- eller CSV-rapporter när det passar dig.
           </p>
           <div class="badges">
             <span class="badge">CarPlay AutoStop &amp; Full Auto</span>
@@ -123,7 +235,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Ladda ner på App Store</a>
             <a class="btn btn-ghost" href="#funktioner">Se funktioner</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">All data lagras lokalt och kan synkas via iCloud.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">All data lagras lokalt och synkas via iCloud.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -131,7 +243,7 @@
             <div class="hero-over-phone-sub">Manuellt, GPS eller automatiskt</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Körjournalen – översikt över resor" loading="eager">
+            <img src="/images/en001-mob.png" alt="Körjournalen – översikt över resor" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -209,7 +321,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Integritet utan kompromisser</h2>
-          <p class="section-intro">Körjournalen använder ingen tredjeparts-analys. All data stannar på din enhet och kan synkas säkert via iCloud.</p>
+          <p class="section-intro">Körjournalen använder ingen tredjeparts-analys. All data stannar på din enhet och synkas säkert via iCloud.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -280,6 +392,60 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Vanliga frågor om körjournal app för iPhone</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Vad är Körjournalen app?</h3>
+            <p>Körjournalen är en iOS-app som fungerar som en elektronisk körjournal iphone app. Om du söker körjournal iphone är detta appen för dig. Den hjälper dig registrera resor och skapa en korrekt körjournal med export till PDF eller CSV.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan man skriva ut PDF-rapport i Körjournalen app?</h3>
+            <p>Ja, du kan exportera körjournalen som PDF och skriva ut eller dela rapporten direkt. Om du söker en manuell körjournal app kan du även registrera och komplettera resor manuellt.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Behövs mätarställning i en körjournal?</h3>
+            <p>Det beror på dina krav och regler. Appen stödjer mätarställning så att rapporten kan bli mer komplett.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jag exportera körjournalen till CSV?</h3>
+            <p>Ja, Körjournalen kan exportera data till CSV för vidare hantering i till exempel Excel eller ekonomisystem.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Fungerar Körjournalen med flera förare och fordon?</h3>
+            <p>Ja, appen stödjer flera förare, fordon och företag i samma app.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jag märka resor med projekt eller kund?</h3>
+            <p>Ja, du kan märka resor med projekt eller projektnummer för enklare uppföljning och rapportering.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Fungerar appen med CarPlay?</h3>
+            <p>Ja, Körjournalen har stöd för CarPlay-funktioner för smidigare hantering i bilen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Lagrar ni min kördata lokalt eller i molnet?</h3>
+            <p>Data lagras lokalt på din enhet och synkas till ditt eget iCloud-konto. Vi har ingen tillgång till din data.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jag använda Körjournalen för både tjänst- och privatresor?</h3>
+            <p>Ja, du kan använda Körjournalen för både tjänst- och privatresor och hålla dem tydligt separerade i appen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Uppfyller Körjournalen Skatteverkets krav?</h3>
+            <p>
+              Körjournalen är utformad för att stödja de uppgifter som Skatteverket rekommenderar för en körjournal,
+              till exempel datum, start och slut, körda kilometer, syfte med resa och mätarställning.
+              Du ansvarar alltid själv för att körjournalen är komplett och korrekt enligt Skatteverkets aktuella regler.
+              Se Skatteverkets vägledning här:
+              <a href="https://skatteverket.se/privat/skatter/arbeteochinkomst/formaner/bilforman/korjournal.4.18e1b10334ebe8bc8000695.html" target="_blank" rel="noopener noreferrer">Körjournal hos Skatteverket</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -314,6 +480,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

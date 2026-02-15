@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0e7c66">
-  <title>Ajopäiväkirja – Älykäs iOS‑ajopäiväkirja CarPlayllä ja raporteilla</title>
-  <meta name="description" content="Ajopäiväkirja on iOS‑ajopäiväkirja, joka kirjaa GPS‑ajot, tukee useita kuljettajia/ajoneuvoja/yrityksiä, projektimerkintää ja PDF- tai CSV‑raporttien vientiä. Tietosuoja iCloud‑synkronoinnilla.">
+  <title>Ajopäiväkirja sovellus – automaattinen ajopäiväkirja iOS:lle</title>
+  <meta name="description" content="Helppo ajopäiväkirja app iOS:lle. Ilmainen ajopäiväkirja alkuun, GPS-kirjaus, CarPlay sekä PDF/CSV-vienti.">
 
   <link rel="preload" as="image" href="/images/en001-mob.png">
 
@@ -68,6 +68,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/fi/",
+        "name": "Ajopäiväkirja",
+        "inLanguage": "fi",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Mikä on ajopäiväkirja sovellus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ajopäiväkirja on iOS-sovellus, joka kirjaa ajot ja auttaa luomaan tarkkoja ajopäiväkirjoja PDF- ja CSV-viennillä."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Voinko tulostaa PDF-raportin sovelluksesta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, voit viedä ajopaivakirjan PDF-muodossa ja tulostaa tai jakaa sen suoraan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Onko tämä automaattinen ajopäiväkirja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, sovellus tukee automaattista GPS-kirjausta ja myös manuaalisia täydennyksiä tarpeesi mukaan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Voinko vieda ajopaivakirjan CSV-muotoon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, voit viedä dataa CSV-muotoon kaytettavaksi esimerkiksi Excelissa tai talousjarjestelmissa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tukeeko sovellus useita kuljettajia ja ajoneuvoja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, sovellus tukee useita kuljettajia, ajoneuvoja ja yrityksia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Voinko merkitä ajot projektille tai asiakkaalle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, voit merkitä ajot projektin nimella tai projektinumerolla helpompaa seurantaa ja raportointia varten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Toimiiko sovellus CarPlayn kanssa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, sovelluksessa on CarPlay-toimintoja sujuvampaan kayttoon autossa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tallennetaanko datani paikallisesti vai pilveen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data tallennetaan paikallisesti laitteellesi ja synkronoidaan omaan iCloud-tiliisi. Meilla ei ole paasyä dataasi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Onko tämä ilmainen ajopäiväkirja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voit aloittaa ilmaisella versiolla ja päivittää tarvittaessa PRO-versioon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Onko tämä helppo ajopäiväkirja app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kyllä, tämä ajopäiväkirja app on tehty helpoksi käyttää ja tukee yleisiä ajopäiväkirjan tarpeita."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -81,6 +192,7 @@
         <a href="#reports">Raportit</a>
         <a href="#privacy">Tietosuoja</a>
         <a href="#pricing">Hinta</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Lataa</a>
         <label for="lang-select" class="sr-only">Kieli</label>
         <select id="lang-select" class="lang-select" aria-label="Kieli">
@@ -118,7 +230,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Lataa App Storesta</a>
             <a class="btn btn-ghost" href="#features">Katso ominaisuudet</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Tiedot tallennetaan paikallisesti ja voidaan synkronoida turvallisesti iCloudin kautta.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Tiedot tallennetaan paikallisesti ja synkronoidaan turvallisesti iCloudin kautta.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -126,7 +238,7 @@
             <div class="hero-over-phone-sub">Manuaalinen, GPS tai automaattinen</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Ajopäiväkirjan näkymä" loading="eager">
+            <img src="/images/en001-mob.png" alt="Ajopäiväkirjan näkymä" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -204,7 +316,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Tietosuoja ilman kompromisseja</h2>
-          <p class="section-intro">Ajopäiväkirja ei käytä kolmannen osapuolen analytiikkaa. Kaikki data pysyy laitteessasi ja voidaan synkronoida turvallisesti iCloudin kautta.</p>
+          <p class="section-intro">Ajopäiväkirja ei käytä kolmannen osapuolen analytiikkaa. Kaikki data pysyy laitteessasi ja synkronoidaan turvallisesti iCloudin kautta.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -275,6 +387,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Usein kysytyt kysymykset ajopäiväkirja sovellus</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Mikä on ajopäiväkirja sovellus?</h3>
+            <p>Ajopäiväkirja on iOS-sovellus, joka kirjaa ajot ja auttaa luomaan tarkkoja ajopäiväkirjoja PDF- ja CSV-viennillä.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Voinko tulostaa PDF-raportin sovelluksesta?</h3>
+            <p>Kyllä, voit viedä ajopaivakirjan PDF-muodossa ja tulostaa tai jakaa sen suoraan.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Onko tämä automaattinen ajopäiväkirja?</h3>
+            <p>Kyllä, sovellus tukee automaattista GPS-kirjausta ja myös manuaalisia täydennyksiä tarpeesi mukaan.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Voinko vieda ajopaivakirjan CSV-muotoon?</h3>
+            <p>Kyllä, voit viedä dataa CSV-muotoon kaytettavaksi esimerkiksi Excelissa tai talousjarjestelmissa.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Tukeeko sovellus useita kuljettajia ja ajoneuvoja?</h3>
+            <p>Kyllä, sovellus tukee useita kuljettajia, ajoneuvoja ja yrityksia.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Voinko merkitä ajot projektille tai asiakkaalle?</h3>
+            <p>Kyllä, voit merkitä ajot projektin nimella tai projektinumerolla helpompaa seurantaa ja raportointia varten.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Toimiiko sovellus CarPlayn kanssa?</h3>
+            <p>Kyllä, sovelluksessa on CarPlay-toimintoja sujuvampaan kayttoon autossa.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Tallennetaanko datani paikallisesti vai pilveen?</h3>
+            <p>Data tallennetaan paikallisesti laitteellesi ja synkronoidaan omaan iCloud-tiliisi. Meilla ei ole paasyä dataasi.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Onko tämä ilmainen ajopäiväkirja?</h3>
+            <p>Voit aloittaa ilmaisella versiolla ja päivittää tarvittaessa PRO-versioon.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Onko tämä helppo ajopäiväkirja app?</h3>
+            <p>Kyllä, tämä ajopäiväkirja app on tehty helpoksi käyttää ja tukee yleisiä ajopäiväkirjan tarpeita.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -309,6 +469,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

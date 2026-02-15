@@ -68,6 +68,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/nl/",
+        "name": "Rittenregistratie",
+        "inLanguage": "nl",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is de Rittenregistratie-app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rittenregistratie is een iOS-app die ritten vastlegt en je helpt om nauwkeurige rittenregistraties te maken met export naar PDF en CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik een PDF-rapport afdrukken in de app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, je kunt je rittenregistratie exporteren als PDF en deze direct afdrukken of delen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik kilometerstand nodig in een rittenregistratie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat hangt af van je eisen en lokale regels. De app ondersteunt kilometerstand om rapporten completer te maken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik mijn rittenregistratie exporteren naar CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, je kunt gegevens exporteren naar CSV voor gebruik in bijvoorbeeld Excel of boekhoudsystemen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ondersteunt de app meerdere bestuurders en voertuigen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de app ondersteunt meerdere bestuurders, voertuigen en bedrijven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik ritten taggen op project of klant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, je kunt ritten taggen met projectnamen of projectnummers voor eenvoudigere opvolging en rapportage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werkt de app met CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de app bevat CarPlay-functies voor eenvoudiger gebruik in de auto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Worden mijn gegevens lokaal of in de cloud opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gegevens worden lokaal op je apparaat opgeslagen en worden gesynchroniseerd met je eigen iCloud-account. Wij hebben geen toegang tot je gegevens."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik de app gebruiken voor zowel zakelijke als privéreizen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, je kunt zowel zakelijke als privéreizen registreren en duidelijk gescheiden houden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Voldoet de app aan gangbare eisen voor rittenregistratie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De app is ontworpen om gangbare eisen voor rittenregistratie te ondersteunen, inclusief belangrijke ritgegevens en documentatievelden. Je blijft altijd zelf verantwoordelijk voor volledige en correcte gegevens volgens de regels die voor jou gelden."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -81,6 +192,7 @@
         <a href="#reports">Rapporten</a>
         <a href="#privacy">Privacy</a>
         <a href="#pricing">Prijs</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Download</a>
         <label for="lang-select" class="sr-only">Taal</label>
         <select id="lang-select" class="lang-select" aria-label="Taal">
@@ -118,7 +230,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Download in de App Store</a>
             <a class="btn btn-ghost" href="#features">Bekijk functies</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Gegevens worden lokaal opgeslagen en kunnen veilig via iCloud worden gesynchroniseerd.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Gegevens worden lokaal opgeslagen en worden veilig via iCloud gesynchroniseerd.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -126,7 +238,7 @@
             <div class="hero-over-phone-sub">Handmatig, GPS of automatisch</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Rittenregistratie overzicht" loading="eager">
+            <img src="/images/en001-mob.png" alt="Rittenregistratie overzicht" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -204,7 +316,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Privacy zonder compromis</h2>
-          <p class="section-intro">Rittenregistratie gebruikt geen analyse van derden. Alle data blijft op je apparaat en kan veilig via iCloud worden gesynchroniseerd.</p>
+          <p class="section-intro">Rittenregistratie gebruikt geen analyse van derden. Alle data blijft op je apparaat en wordt veilig via iCloud gesynchroniseerd.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -275,6 +387,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Veelgestelde vragen</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Wat is de Rittenregistratie-app?</h3>
+            <p>Rittenregistratie is een iOS-app die ritten vastlegt en je helpt om nauwkeurige rittenregistraties te maken met export naar PDF en CSV.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan ik een PDF-rapport afdrukken in de app?</h3>
+            <p>Ja, je kunt je rittenregistratie exporteren als PDF en deze direct afdrukken of delen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Heb ik kilometerstand nodig in een rittenregistratie?</h3>
+            <p>Dat hangt af van je eisen en lokale regels. De app ondersteunt kilometerstand om rapporten completer te maken.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan ik mijn rittenregistratie exporteren naar CSV?</h3>
+            <p>Ja, je kunt gegevens exporteren naar CSV voor gebruik in bijvoorbeeld Excel of boekhoudsystemen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Ondersteunt de app meerdere bestuurders en voertuigen?</h3>
+            <p>Ja, de app ondersteunt meerdere bestuurders, voertuigen en bedrijven.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan ik ritten taggen op project of klant?</h3>
+            <p>Ja, je kunt ritten taggen met projectnamen of projectnummers voor eenvoudigere opvolging en rapportage.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Werkt de app met CarPlay?</h3>
+            <p>Ja, de app bevat CarPlay-functies voor eenvoudiger gebruik in de auto.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Worden mijn gegevens lokaal of in de cloud opgeslagen?</h3>
+            <p>Gegevens worden lokaal op je apparaat opgeslagen en worden gesynchroniseerd met je eigen iCloud-account. Wij hebben geen toegang tot je gegevens.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan ik de app gebruiken voor zowel zakelijke als privéreizen?</h3>
+            <p>Ja, je kunt zowel zakelijke als privéreizen registreren en duidelijk gescheiden houden.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Voldoet de app aan gangbare eisen voor rittenregistratie?</h3>
+            <p>De app is ontworpen om gangbare eisen voor rittenregistratie te ondersteunen, inclusief belangrijke ritgegevens en documentatievelden. Je blijft altijd zelf verantwoordelijk voor volledige en correcte gegevens volgens de regels die voor jou gelden.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -309,6 +469,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

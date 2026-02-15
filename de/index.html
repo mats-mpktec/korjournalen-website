@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0e7c66">
-  <title>Fahrtenbuch – Smartes iOS‑Fahrtenbuch mit CarPlay und Berichten</title>
-  <meta name="description" content="Fahrtenbuch ist ein iOS‑Fahrtenbuch, das GPS‑Fahrten protokolliert, mehrere Fahrer/Fahrzeuge/Firmen unterstützt, Projekte markiert und PDF- oder CSV‑Berichte exportiert. Datenschutzfreundlich mit iCloud‑Sync.">
+  <title>Fahrtenbuch – automatische Fahrtenaufzeichnung für iOS</title>
+  <meta name="description" content="iOS-Fahrtenbuch mit automatischer Fahrtenaufzeichnung, CarPlay sowie PDF/CSV-Export.">
 
   <link rel="preload" as="image" href="/images/en001-mob.png">
 
@@ -68,6 +68,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/de/",
+        "name": "Fahrtenbuch",
+        "inLanguage": "de",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist die Fahrtenbuch-App?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fahrtenbuch ist eine iOS-App, die Fahrten erfasst und dir hilft, korrekte Fahrtenbücher mit PDF- und CSV-Export zu erstellen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich in der App einen PDF-Bericht ausdrucken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kannst dein Fahrtenbuch als PDF exportieren und direkt drucken oder teilen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Brauche ich Kilometerstände in einem Fahrtenbuch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das hängt von deinen Anforderungen und lokalen Regeln ab. Die App unterstützt Kilometerstände, um Berichte vollständiger zu machen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich mein Fahrtenbuch als CSV exportieren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kannst Daten als CSV exportieren und in Tools wie Excel oder Buchhaltungssystemen nutzen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Unterstützt die App mehrere Fahrer und Fahrzeuge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die App unterstützt mehrere Fahrer, Fahrzeuge und Firmen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich Fahrten nach Projekt oder Kunde markieren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kannst Fahrten mit Projektnamen oder Projektnummern markieren, um Auswertung und Reporting zu vereinfachen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funktioniert die App mit CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die App enthält CarPlay-Funktionen für eine reibungslosere Nutzung im Auto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werden meine Daten lokal oder in der Cloud gespeichert?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Daten werden lokal auf deinem Gerät gespeichert und werden mit deinem eigenen iCloud-Konto synchronisiert. Wir haben keinen Zugriff auf deine Daten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich die App sowohl für dienstliche als auch private Fahrten nutzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kannst sowohl dienstliche als auch private Fahrten erfassen und klar getrennt halten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Erfüllt die App übliche Anforderungen an ein Fahrtenbuch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die App ist dafür ausgelegt, übliche Anforderungen an Fahrtenbücher zu unterstützen, inklusive wichtiger Fahrtdaten und Dokumentationsfelder. Du bist immer selbst dafür verantwortlich, dass deine Angaben vollständig und regelkonform sind."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -81,6 +192,7 @@
         <a href="#reports">Berichte</a>
         <a href="#privacy">Datenschutz</a>
         <a href="#pricing">Preis</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Download</a>
         <label for="lang-select" class="sr-only">Sprache</label>
         <select id="lang-select" class="lang-select" aria-label="Sprache">
@@ -118,7 +230,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Im App Store laden</a>
             <a class="btn btn-ghost" href="#features">Funktionen ansehen</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Daten werden lokal gespeichert und können sicher über iCloud synchronisiert werden.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Daten werden lokal gespeichert und werden sicher über iCloud synchronisiert.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -126,7 +238,7 @@
             <div class="hero-over-phone-sub">Manuell, GPS oder automatisch</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Fahrtenbuch Übersicht" loading="eager">
+            <img src="/images/en001-mob.png" alt="Fahrtenbuch Übersicht" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -204,7 +316,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Datenschutz ohne Kompromisse</h2>
-          <p class="section-intro">Fahrtenbuch nutzt keine Drittanbieter‑Analyse. Alle Daten bleiben auf deinem Gerät und können sicher per iCloud synchronisiert werden.</p>
+          <p class="section-intro">Fahrtenbuch nutzt keine Drittanbieter‑Analyse. Alle Daten bleiben auf deinem Gerät und werden sicher per iCloud synchronisiert.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -275,6 +387,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Häufige Fragen zur automatischen Fahrtenaufzeichnung</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Was ist die Fahrtenbuch-App?</h3>
+            <p>Fahrtenbuch ist eine iOS-App, die Fahrten erfasst und dir hilft, korrekte Fahrtenbucher mit PDF- und CSV-Export zu erstellen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kann ich in der App einen PDF-Bericht ausdrucken?</h3>
+            <p>Ja, du kannst dein Fahrtenbuch als PDF exportieren und direkt drucken oder teilen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Brauche ich Kilometerstande in einem Fahrtenbuch?</h3>
+            <p>Das hangt von deinen Anforderungen und lokalen Regeln ab. Die App unterstutzt Kilometerstande, um Berichte vollstandiger zu machen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kann ich mein Fahrtenbuch als CSV exportieren?</h3>
+            <p>Ja, du kannst Daten als CSV exportieren und in Tools wie Excel oder Buchhaltungssystemen nutzen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Unterstutzt die App mehrere Fahrer und Fahrzeuge?</h3>
+            <p>Ja, die App unterstutzt mehrere Fahrer, Fahrzeuge und Firmen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kann ich Fahrten nach Projekt oder Kunde markieren?</h3>
+            <p>Ja, du kannst Fahrten mit Projektnamen oder Projektnummern markieren, um Auswertung und Reporting zu vereinfachen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Funktioniert die App mit CarPlay?</h3>
+            <p>Ja, die App enthalt CarPlay-Funktionen fur eine reibungslosere Nutzung im Auto.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Werden meine Daten lokal oder in der Cloud gespeichert?</h3>
+            <p>Die Daten werden lokal auf deinem Gerat gespeichert und werden mit deinem eigenen iCloud-Konto synchronisiert. Wir haben keinen Zugriff auf deine Daten.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kann ich die App sowohl fur dienstliche als auch private Fahrten nutzen?</h3>
+            <p>Ja, du kannst sowohl dienstliche als auch private Fahrten erfassen und klar getrennt halten.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Erfullt die App ubliche Anforderungen an ein Fahrtenbuch?</h3>
+            <p>Die App ist dafur ausgelegt, ubliche Anforderungen an Fahrtenbucher zu unterstutzen, inklusive wichtiger Fahrtdaten und Dokumentationsfelder. Du bist immer selbst dafur verantwortlich, dass deine Angaben vollstandig und regelkonform sind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -309,6 +469,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

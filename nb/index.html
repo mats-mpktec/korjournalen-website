@@ -68,6 +68,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/nb/",
+        "name": "Kjørebok",
+        "inLanguage": "nb",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hva er Kjørebok-appen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kjørebok er en iOS-app som registrerer turer og hjelper deg med å lage korrekte kjørejournaler med eksport til PDF og CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg skrive ut en PDF-rapport i appen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan eksportere kjørejournalen som PDF og skrive den ut eller dele den direkte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Trenger jeg kilometerstand i en kjørejournal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Det avhenger av behovene dine og lokale regler. Appen støtter kilometerstand for mer komplette rapporter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg eksportere kjørejournalen til CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan eksportere data til CSV for bruk i for eksempel Excel eller økonomisystemer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Støtter appen flere sjåfører og kjøretøy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, appen støtter flere sjåfører, kjøretøy og bedrifter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg merke turer med prosjekt eller kunde?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan merke turer med prosjektnavn eller prosjektnummer for enklere oppfølging og rapportering."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Fungerer appen med CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, appen har CarPlay-funksjoner for enklere bruk i bilen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Lagres dataene mine lokalt eller i skyen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data lagres lokalt på enheten din og synkroniseres til din egen iCloud-konto. Vi har ikke tilgang til dataene dine."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg bruke appen til både tjeneste- og privatreiser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan registrere både tjenestereiser og privatreiser og holde dem tydelig adskilt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Oppfyller appen vanlige krav til kjørejournal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Appen er laget for å støtte vanlige krav til kjørejournal, inkludert sentrale turdata og dokumentasjonsfelt. Du er alltid selv ansvarlig for at opplysningene er komplette og korrekte etter reglene som gjelder for deg."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -81,6 +192,7 @@
         <a href="#reports">Rapporter</a>
         <a href="#privacy">Personvern</a>
         <a href="#pricing">Pris</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Last ned</a>
         <label for="lang-select" class="sr-only">Språk</label>
         <select id="lang-select" class="lang-select" aria-label="Språk">
@@ -118,7 +230,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Last ned i App Store</a>
             <a class="btn btn-ghost" href="#features">Se funksjoner</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Data lagres lokalt og kan synkroniseres sikkert via iCloud.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Data lagres lokalt og synkroniseres sikkert via iCloud.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -126,7 +238,7 @@
             <div class="hero-over-phone-sub">Manuelt, GPS eller automatisk</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Kjørebok oversikt" loading="eager">
+            <img src="/images/en001-mob.png" alt="Kjørebok oversikt" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -204,7 +316,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Personvern uten kompromiss</h2>
-          <p class="section-intro">Kjørebok bruker ingen tredjeparts‑analyse. Alle data blir på enheten din og kan synkroniseres sikkert via iCloud.</p>
+          <p class="section-intro">Kjørebok bruker ingen tredjeparts‑analyse. Alle data blir på enheten din og synkroniseres sikkert via iCloud.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -275,6 +387,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Vanlige spørsmål</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Hva er Kjørebok-appen?</h3>
+            <p>Kjørebok er en iOS-app som registrerer turer og hjelper deg med å lage korrekte kjørejournaler med eksport til PDF og CSV.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg skrive ut en PDF-rapport i appen?</h3>
+            <p>Ja, du kan eksportere kjørejournalen som PDF og skrive den ut eller dele den direkte.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Trenger jeg kilometerstand i en kjørejournal?</h3>
+            <p>Det avhenger av behovene dine og lokale regler. Appen støtter kilometerstand for mer komplette rapporter.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg eksportere kjørejournalen til CSV?</h3>
+            <p>Ja, du kan eksportere data til CSV for bruk i for eksempel Excel eller økonomisystemer.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Støtter appen flere sjåfører og kjøretøy?</h3>
+            <p>Ja, appen støtter flere sjåfører, kjøretøy og bedrifter.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg merke turer med prosjekt eller kunde?</h3>
+            <p>Ja, du kan merke turer med prosjektnavn eller prosjektnummer for enklere oppfølging og rapportering.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Fungerer appen med CarPlay?</h3>
+            <p>Ja, appen har CarPlay-funksjoner for enklere bruk i bilen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Lagres dataene mine lokalt eller i skyen?</h3>
+            <p>Data lagres lokalt på enheten din og synkroniseres til din egen iCloud-konto. Vi har ikke tilgang til dataene dine.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg bruke appen til både tjeneste- og privatreiser?</h3>
+            <p>Ja, du kan registrere både tjenestereiser og privatreiser og holde dem tydelig adskilt.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Oppfyller appen vanlige krav til kjørejournal?</h3>
+            <p>Appen er laget for å støtte vanlige krav til kjørejournal, inkludert sentrale turdata og dokumentasjonsfelt. Du er alltid selv ansvarlig for at opplysningene er komplette og korrekte etter reglene som gjelder for deg.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -309,6 +469,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

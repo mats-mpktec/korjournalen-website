@@ -6,7 +6,7 @@
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0e7c66">
   <title>Kørebog – Smart iOS‑kørebog med CarPlay og rapporter</title>
-  <meta name="description" content="Kørebog er en iOS‑kørebog, der logger GPS‑ture, understøtter flere chauffører/køretøjer/virksomheder, projektmærkning og eksport af PDF- eller CSV‑rapporter. Privatlivsfokus med iCloud‑synk.">
+  <meta name="description" content="Kørebog til iOS med GPS-registrering, CarPlay og eksport til PDF/CSV.">
 
   <link rel="preload" as="image" href="/images/en001-mob.png">
 
@@ -68,6 +68,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/da/",
+        "name": "Kørebog",
+        "inLanguage": "da",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hvad er Korebog-appen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Korebog er en iOS-app, der registrerer ture og hjælper dig med at lave korrekte korerapporter med eksport til PDF og CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg udskrive en PDF-rapport i appen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan eksportere din korebog som PDF og udskrive eller dele den direkte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Har jeg brug for kilometertaeller i en korebog?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Det afhaenger af dine behov og lokale regler. Appen understotter kilometertaeller, sa rapporter kan blive mere komplette."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg eksportere min korebog til CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan eksportere data til CSV til brug i fx Excel eller okonomisystemer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Understotter appen flere chaufforer og koretojer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, appen understotter flere chaufforer, koretojer og virksomheder."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg maerke ture med projekt eller kunde?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan maerke ture med projektnavne eller projektnumre for lettere opfolgning og rapportering."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Virker appen med CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, appen indeholder CarPlay-funktioner for nemmere brug i bilen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gemmes mine data lokalt eller i skyen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data gemmes lokalt pa din enhed og synkroniseres til din egen iCloud-konto. Vi har ikke adgang til dine data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg bruge appen til bade erhvervs- og private ture?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, du kan registrere bade erhvervs- og private ture og holde dem tydeligt adskilt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Opfylder appen almindelige krav til en korebog?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Appen er designet til at understotte almindelige krav til koreboger, inklusive centrale turdata og dokumentationsfelter. Du er altid selv ansvarlig for, at oplysningerne er komplette og korrekte efter de regler, der gaelder for dig."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -81,6 +192,7 @@
         <a href="#reports">Rapporter</a>
         <a href="#privacy">Privatliv</a>
         <a href="#pricing">Pris</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Hent</a>
         <label for="lang-select" class="sr-only">Sprog</label>
         <select id="lang-select" class="lang-select" aria-label="Sprog">
@@ -118,7 +230,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Hent i App Store</a>
             <a class="btn btn-ghost" href="#features">Se funktioner</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Data gemmes lokalt og kan synkroniseres sikkert via iCloud.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Data gemmes lokalt og synkroniseres sikkert via iCloud.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -126,7 +238,7 @@
             <div class="hero-over-phone-sub">Manuelt, GPS eller automatisk</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Kørebog oversigt" loading="eager">
+            <img src="/images/en001-mob.png" alt="Kørebog oversigt" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -204,7 +316,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Privatliv uden kompromis</h2>
-          <p class="section-intro">Kørebog bruger ingen tredjeparts‑analyse. Alle data bliver på din enhed og kan synkroniseres sikkert via iCloud.</p>
+          <p class="section-intro">Kørebog bruger ingen tredjeparts‑analyse. Alle data bliver på din enhed og synkroniseres sikkert via iCloud.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -275,6 +387,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Ofte stillede spørgsmål om kørebog</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Hvad er Korebog-appen?</h3>
+            <p>Korebog er en iOS-app, der registrerer ture og hjælper dig med at lave korrekte korerapporter med eksport til PDF og CSV.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg udskrive en PDF-rapport i appen?</h3>
+            <p>Ja, du kan eksportere din korebog som PDF og udskrive eller dele den direkte.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Har jeg brug for kilometertaeller i en korebog?</h3>
+            <p>Det afhaenger af dine behov og lokale regler. Appen understotter kilometertaeller, sa rapporter kan blive mere komplette.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg eksportere min korebog til CSV?</h3>
+            <p>Ja, du kan eksportere data til CSV til brug i fx Excel eller okonomisystemer.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Understotter appen flere chaufforer og koretojer?</h3>
+            <p>Ja, appen understotter flere chaufforer, koretojer og virksomheder.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg maerke ture med projekt eller kunde?</h3>
+            <p>Ja, du kan maerke ture med projektnavne eller projektnumre for lettere opfolgning og rapportering.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Virker appen med CarPlay?</h3>
+            <p>Ja, appen indeholder CarPlay-funktioner for nemmere brug i bilen.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Gemmes mine data lokalt eller i skyen?</h3>
+            <p>Data gemmes lokalt pa din enhed og synkroniseres til din egen iCloud-konto. Vi har ikke adgang til dine data.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Kan jeg bruge appen til bade erhvervs- og private ture?</h3>
+            <p>Ja, du kan registrere bade erhvervs- og private ture og holde dem tydeligt adskilt.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Opfylder appen almindelige krav til en korebog?</h3>
+            <p>Appen er designet til at understotte almindelige krav til koreboger, inklusive centrale turdata og dokumentationsfelter. Du er altid selv ansvarlig for, at oplysningerne er komplette og korrekte efter de regler, der gaelder for dig.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -309,6 +469,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;

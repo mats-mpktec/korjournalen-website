@@ -68,6 +68,117 @@
     "isAccessibleForFree": true
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://xn--krjournalen-rfb.se/#website",
+        "url": "https://xn--krjournalen-rfb.se/pl/",
+        "name": "Kilometrówka",
+        "inLanguage": "pl",
+        "publisher": {
+          "@id": "https://xn--krjournalen-rfb.se/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://xn--krjournalen-rfb.se/#organization",
+        "name": "MPK Tec AB",
+        "url": "https://mpktec.se"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czym jest aplikacja Kilometrówka?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kilometrówka to aplikacja iOS, która rejestruje trasy i pomaga tworzyć poprawną ewidencję przebiegu z eksportem do PDF i CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy mogę wydrukować raport PDF w aplikacji?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, możesz wyeksportować ewidencję przebiegu jako PDF i od razu ją wydrukować lub udostępnić."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy potrzebuję stanu licznika w ewidencji przebiegu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To zależy od Twoich potrzeb i lokalnych przepisów. Aplikacja obsługuje stan licznika, aby raporty były pełniejsze."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy mogę wyeksportować ewidencję przebiegu do CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, możesz wyeksportować dane do CSV i użyć ich np. w Excelu lub systemie księgowym."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy aplikacja obsługuje wielu kierowców i pojazdy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, aplikacja obsługuje wielu kierowców, pojazdy i firmy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy mogę oznaczać trasy projektem lub klientem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, możesz oznaczać trasy nazwą projektu lub numerem projektu dla łatwiejszego raportowania."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy aplikacja działa z CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, aplikacja zawiera funkcje CarPlay, które ułatwiają korzystanie w samochodzie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy moje dane są przechowywane lokalnie czy w chmurze?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dane są przechowywane lokalnie na Twoim urządzeniu i są synchronizowane z Twoim własnym kontem iCloud. Nie mamy dostępu do Twoich danych."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy mogę używać aplikacji do przejazdów służbowych i prywatnych?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, możesz rejestrować przejazdy służbowe i prywatne oraz trzymać je wyraźnie oddzielone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy aplikacja spełnia typowe wymagania ewidencji przebiegu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aplikacja jest zaprojektowana tak, aby wspierać typowe wymagania ewidencji przebiegu, w tym kluczowe dane przejazdu i pola dokumentacji. Zawsze odpowiadasz za kompletne i poprawne dane zgodnie z zasadami, które Ciebie dotyczą."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -81,6 +192,7 @@
         <a href="#reports">Raporty</a>
         <a href="#privacy">Prywatność</a>
         <a href="#pricing">Cena</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-primary" href="#download">Pobierz</a>
         <label for="lang-select" class="sr-only">Język</label>
         <select id="lang-select" class="lang-select" aria-label="Język">
@@ -118,7 +230,7 @@
             <a class="btn btn-primary" href="https://apps.apple.com/app/id6758159503">Pobierz w App Store</a>
             <a class="btn btn-ghost" href="#features">Zobacz funkcje</a>
           </div>
-          <p style="margin-top: 18px; color: var(--ink-muted);">Dane są przechowywane lokalnie i mogą być bezpiecznie synchronizowane przez iCloud.</p>
+          <p style="margin-top: 18px; color: var(--ink-muted);">Dane są przechowywane lokalnie i są bezpiecznie synchronizowane przez iCloud.</p>
         </div>
         <div class="hero-card hero-card--image reveal delay-1">
           <div class="hero-caption">
@@ -126,7 +238,7 @@
             <div class="hero-over-phone-sub">Ręcznie, GPS lub automatycznie</div>
           </div>
           <div class="device-frame">
-            <img src="/images/en001-mob.png" alt="Podgląd kilometrówki" loading="eager">
+            <img src="/images/en001-mob.png" alt="Podgląd kilometrówki" loading="eager" fetchpriority="high" width="1077" height="2129">
           </div>
         </div>
       </div>
@@ -204,7 +316,7 @@
       <div class="container split">
         <div class="hero-card reveal">
           <h2 class="section-title">Prywatność bez kompromisów</h2>
-          <p class="section-intro">Kilometrówka nie używa analityki stron trzecich. Wszystkie dane pozostają na Twoim urządzeniu i mogą być bezpiecznie synchronizowane przez iCloud.</p>
+          <p class="section-intro">Kilometrówka nie używa analityki stron trzecich. Wszystkie dane pozostają na Twoim urządzeniu i są bezpiecznie synchronizowane przez iCloud.</p>
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">✓</div>
@@ -275,6 +387,54 @@
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Najczęściej zadawane pytania</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Czym jest aplikacja Kilometrówka?</h3>
+            <p>Kilometrówka to aplikacja iOS, która rejestruje trasy i pomaga tworzyć poprawną ewidencję przebiegu z eksportem do PDF i CSV.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy mogę wydrukować raport PDF w aplikacji?</h3>
+            <p>Tak, możesz wyeksportować ewidencję przebiegu jako PDF i od razu ją wydrukować lub udostępnić.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy potrzebuję stanu licznika w ewidencji przebiegu?</h3>
+            <p>To zależy od Twoich potrzeb i lokalnych przepisów. Aplikacja obsługuje stan licznika, aby raporty były pełniejsze.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy mogę wyeksportować ewidencję przebiegu do CSV?</h3>
+            <p>Tak, możesz wyeksportować dane do CSV i użyć ich np. w Excelu lub systemie księgowym.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy aplikacja obsługuje wielu kierowców i pojazdy?</h3>
+            <p>Tak, aplikacja obsługuje wielu kierowców, pojazdy i firmy.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy mogę oznaczać trasy projektem lub klientem?</h3>
+            <p>Tak, możesz oznaczać trasy nazwą projektu lub numerem projektu dla łatwiejszego raportowania.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy aplikacja działa z CarPlay?</h3>
+            <p>Tak, aplikacja zawiera funkcje CarPlay, które ułatwiają korzystanie w samochodzie.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy moje dane są przechowywane lokalnie czy w chmurze?</h3>
+            <p>Dane są przechowywane lokalnie na Twoim urządzeniu i są synchronizowane z Twoim własnym kontem iCloud. Nie mamy dostępu do Twoich danych.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy mogę używać aplikacji do przejazdów służbowych i prywatnych?</h3>
+            <p>Tak, możesz rejestrować przejazdy służbowe i prywatne oraz trzymać je wyraźnie oddzielone.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Czy aplikacja spełnia typowe wymagania ewidencji przebiegu?</h3>
+            <p>Aplikacja jest zaprojektowana tak, aby wspierać typowe wymagania ewidencji przebiegu, w tym kluczowe dane przejazdu i pola dokumentacji. Zawsze odpowiadasz za kompletne i poprawne dane zgodnie z zasadami, które Ciebie dotyczą.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="download">
       <div class="container">
         <div class="cta reveal">
@@ -309,6 +469,26 @@
         navLinks.classList.toggle('open');
       });
     }
+    const header = document.querySelector('header');
+    const scrollToTarget = (target, behavior = 'smooth') => {
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior });
+    };
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const hash = link.getAttribute('href');
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) {
+          return;
+        }
+        event.preventDefault();
+        navLinks.classList.remove('open');
+        scrollToTarget(target, 'smooth');
+        setTimeout(() => scrollToTarget(target, 'auto'), 450);
+        setTimeout(() => scrollToTarget(target, 'auto'), 900);
+      });
+    });
     if (langSelect) {
       langSelect.addEventListener('change', (event) => {
         const target = event.target.value;
